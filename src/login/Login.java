@@ -1,8 +1,8 @@
 package login;
 
-public class Login implements FuncionesNecesarias {
+public class Login implements FuncionesNecesarias, OtrasFunciones {
 
-    public String ruta = "otraRutta.html";
+    public String ruta = "otraRuta.html";
     
     // SOBRECARGA DE METODOS
     
@@ -32,10 +32,10 @@ public class Login implements FuncionesNecesarias {
         String[] datos = {email, "abc123"};
         return datos;
     }
-    
-    
-    
-    
-    
+
+    @Override
+    public void funcionObligatoria() {
+        System.out.println("Soy la función obligatoria");
+    }
     
 }
